@@ -74,6 +74,7 @@ grunt.initConfig({
 
 You can add several task, in this example you can see two tasks, one for js files and another for html files.
 
+```js
             inject_comment: {
                 js: {
                     options: {
@@ -96,6 +97,7 @@ You can add several task, in this example you can see two tasks, one for js file
                 }
 
             }
+```
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
