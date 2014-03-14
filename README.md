@@ -3,7 +3,7 @@
 > Inject a comment at the end of your html and js files
 
 ## Getting Started
-This plugin requires Grunt `~0.4.4`
+This plugin requires Grunt `~0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -103,4 +103,4 @@ You can add several task, in this example you can see two tasks, one for js file
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-2014-03-14 // V 0.1 // First release
+2014-03-14 // V 0.1.2 // First release
