@@ -70,6 +70,32 @@ grunt.initConfig({
 });
 ```
 
+#### Custom Options
+
+You can add several task, in this example you can see two tasks, one for js files and another for html files.
+
+            inject_comment: {
+                js: {
+                    options: {
+                        value: 'My js files',
+                        type: 'js'
+                    },
+                    files: {
+                        'src': ['app/scripts/app.js', 'app/scripts/controllers/*.js']
+                    }
+                },
+
+                html: {
+                    options: {
+                        value: 'My htlm files',
+                        type: 'html'
+                    },
+                    files: {
+                        'src': ['app/views/*.html']
+                    }
+                }
+
+            }
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
