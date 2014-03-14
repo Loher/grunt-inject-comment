@@ -1,30 +1,30 @@
-# inject
+# grunt-inject-comment
 
 > Inject a comment at the end of your html and js files
 
 ## Getting Started
-This plugin requires Grunt.
+This plugin requires Grunt `~0.4.4`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install inject --save-dev
+npm install grunt-inject-comment --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('inject');
+grunt.loadNpmTasks('grunt-inject-comment');
 ```
 
-## The "inject" task
+## The "inject_comment" task
 
 ### Overview
-In your project's Gruntfile, add a section named `inject` to the data object passed into `grunt.initConfig()`.
+In your project's Gruntfile, add a section named `inject_comment` to the data object passed into `grunt.initConfig()`.
 
 ```js
 grunt.initConfig({
-  inject: {
+  inject_comment: {
     options: {
       // Task-specific options go here.
     },
@@ -33,7 +33,7 @@ grunt.initConfig({
 	  //format is --> 'src': ['file1.html', 'file2.html', ...]
     },
   },
-})
+});
 ```
 
 ### Options
@@ -58,8 +58,8 @@ In this example, '// The comment to add' will be added at the end of all js file
 
 ```js
 grunt.initConfig({
-  inject: {
-    options: {
+  inject_comment: {
+   options: {
 		type: 'js',
 		value: 'The comment to add'
 	},
@@ -67,14 +67,12 @@ grunt.initConfig({
       'src': ['src/testing.js', 'src/ctrl/*.js']
     }
   },
-})
+});
 ```
+
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
 2014-03-14 // V 0.1 // First release
-
-## License
-Copyright (c) 2014 Loher Francois. Licensed under the MIT license.

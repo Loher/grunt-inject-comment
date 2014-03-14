@@ -1,33 +1,41 @@
 {
-  "name": "inject",
-  "version": "0.0.1",
+  "name": "grunt-inject-comment",
   "description": "Inject a comment at the end of your html and js files",
-  "repository": "https://github.com/Loher/grunt-inject-comment.git",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Loher/grunt-inject-comment",
   "author": {
     "name": "Loher Francois",
     "email": "francoisloher@gmail.com"
   },
-  "keywords": [
-    "gruntplugin"
-  ],
-  "main": "Gruntfile.js",
-  "engines": {
-    "node": ">= 0.8.0"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Loher/grunt-inject-comment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Loher/grunt-inject-comment/issues"
   },
   "licenses": [
     {
-      "type": "MIT"
+      "type": "MIT",
+      "url": "https://github.com/Loher/grunt-inject-comment/blob/master/LICENSE-MIT"
     }
   ],
-  "devDependencies": {
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-nodeunit": "~0.3.0",
-    "grunt": "~0.4.2",
-    "jshint-stylish": "~0.1.5",
-    "load-grunt-tasks": "~0.3.0"
+  "engines": {
+    "node": ">= 0.8.0"
   },
   "scripts": {
     "test": "grunt test"
-  }
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.4"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.4"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
 }
