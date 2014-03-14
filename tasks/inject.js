@@ -17,8 +17,8 @@ module.exports = function (grunt) {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
-      punctuation: '.',
-      separator: ', '
+      type: 'html',
+      value: 'my comment'
     });
 
     // Iterate over all specified file groups.

@@ -28,8 +28,9 @@ grunt.initConfig({
     options: {
       // Task-specific options go here.
     },
-    your_target: {
+    files: {
       // Target-specific file lists and/or options go here.
+	  //format is --> 'src': ['file1.html', 'file2.html', ...]
     },
   },
 })
@@ -37,17 +38,18 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.type
 Type: `String`
-Default value: `',  '`
+Default value: `'html'`
+Allowed values : 'html', 'js'
 
-A string value that is used to do something with whatever.
+An indicator used by the plugin to add the comment in an html or a js files.
 
-#### options.punctuation
+#### options.value
 Type: `String`
-Default value: `'.'`
+Default value: `my comment`
 
-A string value that is used to do something else with whatever else.
+The value of the comment that you want to add in your files.
 
 ### Usage Examples
 
@@ -57,27 +59,13 @@ In this example, the default options are used to do something with whatever. So 
 ```js
 grunt.initConfig({
   inject: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
-  },
-})
-```
-
-#### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
-
-```js
-grunt.initConfig({
-  inject: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
+		type: 'js',
+		value: 'The comment to add'
+	},
     files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+      'src': ['src/testing.js', 'src/ctrl/*.js']
+    }
   },
 })
 ```
@@ -86,7 +74,7 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
+2014-03-14	V 0.1	First release
 
 ## License
 Copyright (c) 2014 Loher Francois. Licensed under the MIT license.
