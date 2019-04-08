@@ -33,12 +33,12 @@
     "grunt": "~0.4.4"
   },
   "peerDependencies": {
-    "grunt": "~0.4.0"
+    "grunt": ">=0.4.0"
   },
   "keywords": [
     "gruntplugin",
-	"inject",
-	"comment",
-	"add comment"
+    "inject",
+    "comment",
+    "add comment"
   ]
 }
